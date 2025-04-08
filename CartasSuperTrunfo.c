@@ -3,8 +3,8 @@
 
 
 int main() {
-    printf("Desafio Xadrez! \n");
-    
+    printf("Seja bem vindo(a) ao Cartas Trunfo! \n");
+
    
 
     return 0;
