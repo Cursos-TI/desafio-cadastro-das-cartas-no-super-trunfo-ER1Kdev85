@@ -13,26 +13,26 @@ float pib;
 int main() {
     printf("Seja bem vindo(a) ao Cartas Trunfo! \n");
 
-    printf("Vamos começar com a CARTA 1. Digite o estado: \n");
+    printf("Vamos começar com a CARTA 1. Digite o estado [UF]: \n");
     scanf("%s", &estado);  
 
     printf("Ok. Agora me diga o ID da carta: \n");
-    scanf("s%", &id);
+    scanf("%s", &id);
 
     printf("òtimo, pode me informar o nome d cidade? \n");
-    scanf("s%", &nome);
+    scanf("%s", &nome);
 
     printf("Qual a população atual da cidade? \n");
-    scanf("d%", &populaçao);
+    scanf("%d", &populaçao);
 
     printf("Perfeito! Consegue me informar a quantidade de pontos turísticos da cidade? \n");
-    scanf("d%", &pontost);
+    scanf("%d", &pontost);
 
     printf("Qual a área total da cidade em km2? \n");
-    scanf("f%", &area);
+    scanf("%f", &area);
 
     printf("Por último, qual o PIB da cidade? \n");
-    scanf("f%", &pib);
+    scanf("%f", &pib);
     
 
 
