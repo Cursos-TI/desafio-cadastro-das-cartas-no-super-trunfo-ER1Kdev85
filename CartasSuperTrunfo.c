@@ -30,8 +30,8 @@ int main() {
     printf("Ok. Agora me diga o ID da carta: \n");
     scanf("%3s", &id);
 
-    printf("Ótimo, pode me informar o nome da cidade? \n");
-    scanf("%49[^\n]", &nome);
+    printf("Ótimo, pode me informar o nome da cidade? (Ex: Fortaleza, RioDeJaneiro, SaoPaulo) \n");
+    scanf("%s", &nome);
 
     printf("Qual a população atual da cidade? (Digite sem '.' e ',') \n");
     scanf("%d", &populacao);
@@ -39,25 +39,25 @@ int main() {
     printf("Perfeito! Consegue me informar a quantidade de pontos turísticos da cidade? \n");
     scanf("%d", &pontost);
 
-    printf("Qual a área total da cidade em km2? \n");
+    printf("Qual a área total da cidade em km2? (Ex: 313.8) \n");
     scanf("%f", &area);
 
-    printf("Por último, qual o PIB da cidade? \n");
+    printf("Por último, qual o PIB da cidade? (Ex: 73.436) \n");
     scanf("%f", &pib);
 
 //-------------------------------------------------------------------------------
 
 // CARTA 2
-    printf("Perfeito, já registramos sua primeira carta. Vamos preencher a CARTA 2? \n");
+    printf("\nPerfeito, já registramos sua primeira carta. Vamos preencher a CARTA 2? \n");
 
-    printf("CARTA 2. Comece digitando o estado [UF]: \n");
+    printf("\nCARTA 2. Comece digitando o estado [UF]: \n");
     scanf("%3s", &estado2);  
 
     printf("Agora o ID da carta: \n");
     scanf("%3s", &id2);
 
-    printf("Ótimo. Qual o nome da cidade? \n");
-    scanf("%49[^\n]", &nome2);
+    printf("Ótimo. Qual o nome da cidade? (Ex: Fortaleza, RioDeJaneiro, SaoPaulo) \n");
+    scanf("%s", &nome2);
 
     printf("População atual da cidade? (Lembre-se, sem '.' e ',') \n");
     scanf("%d", &populacao2);
@@ -65,11 +65,11 @@ int main() {
     printf("Perfeito! Consegue me informar a quantidade de pontos turísticos? \n");
     scanf("%d", &pontost2);
 
-    printf("Qual a área total em km2? \n");
+    printf("Qual a área total em km2? (Ex: 313.8) \n");
     scanf("%f", &area2);
 
-    printf("Por último, qual o PIB da cidade? \n");
-    scanf("%f\n", &pib2);
+    printf("Por último, qual o PIB da cidade? (Ex: 73.436) \n");
+    scanf("%f", &pib2);
 
 //-------------------------------------------------------------------------------
 
@@ -82,8 +82,8 @@ int main() {
     printf("Cidade: %s\n", nome);
     printf("População: %d\n", populacao);
     printf("Quantidade de pontos turisticos: %d\n", pontost);
-    printf("Área total (Km2): %f\n", area);
-    printf("PIB: %2f\n", pib);
+    printf("Área total (Km2): %.3f\n", area);
+    printf("PIB: %.3f\n", pib);
 
 //-------------------------------------------------------------------------------
 
@@ -95,8 +95,8 @@ int main() {
     printf("Cidade: %s\n", nome2);
     printf("População: %d\n", populacao2);
     printf("Quantidade de pontos turisticos: %d\n", pontost2);
-    printf("Área total (Km2): %f\n", area2);
-    printf("PIB: %2f\n", pib2);
+    printf("Área total (Km2): %.3f\n", area2);
+    printf("PIB: %.3f\n", pib2);
 
 //-------------------------------------------------------------------------------
 
