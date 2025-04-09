@@ -25,15 +25,15 @@ int main() {
 
 // CARTA 1
     printf("Vamos começar com a CARTA 1. Digite o estado [UF]: \n");
-    scanf("%s", &estado);  
+    scanf("%3s", &estado);  
 
     printf("Ok. Agora me diga o ID da carta: \n");
-    scanf("%s", &id);
+    scanf("%3s", &id);
 
-    printf("òtimo, pode me informar o nome da cidade? \n");
-    scanf("%s", &nome);
+    printf("Ótimo, pode me informar o nome da cidade? \n");
+    scanf("%49[^\n]", &nome);
 
-    printf("Qual a população atual da cidade? \n");
+    printf("Qual a população atual da cidade? (Digite sem '.' e ',') \n");
     scanf("%d", &populacao);
 
     printf("Perfeito! Consegue me informar a quantidade de pontos turísticos da cidade? \n");
@@ -51,15 +51,15 @@ int main() {
     printf("Perfeito, já registramos sua primeira carta. Vamos preencher a CARTA 2? \n");
 
     printf("CARTA 2. Comece digitando o estado [UF]: \n");
-    scanf("%s", &estado2);  
+    scanf("%3s", &estado2);  
 
     printf("Agora o ID da carta: \n");
-    scanf("%s", &id2);
+    scanf("%3s", &id2);
 
-    printf("òtimo. Qual o nome da cidade? \n");
-    scanf("%s", &nome2);
+    printf("Ótimo. Qual o nome da cidade? \n");
+    scanf("%49[^\n]", &nome2);
 
-    printf("População atual da cidade? \n");
+    printf("População atual da cidade? (Lembre-se, sem '.' e ',') \n");
     scanf("%d", &populacao2);
 
     printf("Perfeito! Consegue me informar a quantidade de pontos turísticos? \n");
@@ -69,34 +69,34 @@ int main() {
     scanf("%f", &area2);
 
     printf("Por último, qual o PIB da cidade? \n");
-    scanf("%f", &pib2);
+    scanf("%f\n", &pib2);
 
 //-------------------------------------------------------------------------------
 
     // EXIBIR RESULTADO DA CARTA 1:
 
-    printf("CARTAS CRIADAS COM SUCESSO! \n");
-    printf("CARTA 1: \n");
+    printf("\nCARTAS CRIADAS COM SUCESSO! \n");
+    printf("\n---- CARTA 1 ---- \n");
     printf("Estado: %s\n", estado);
     printf("ID: %s\n", id);
     printf("Cidade: %s\n", nome);
     printf("População: %d\n", populacao);
     printf("Quantidade de pontos turisticos: %d\n", pontost);
     printf("Área total (Km2): %f\n", area);
-    printf("PIB: %f\n", pib);
+    printf("PIB: %2f\n", pib);
 
 //-------------------------------------------------------------------------------
 
     // EXIBIR RESULDADO DA CARTA 2:
 
-    printf("CARTA 2: \n");
+    printf("\n---- CARTA 2 ---- \n");
     printf("Estado: %s\n", estado2);
     printf("ID: %s\n", id2);
     printf("Cidade: %s\n", nome2);
     printf("População: %d\n", populacao2);
     printf("Quantidade de pontos turisticos: %d\n", pontost2);
     printf("Área total (Km2): %f\n", area2);
-    printf("PIB: %f\n", pib2);
+    printf("PIB: %2f\n", pib2);
 
 //-------------------------------------------------------------------------------
 
