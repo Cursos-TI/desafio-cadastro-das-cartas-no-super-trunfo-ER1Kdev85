@@ -76,7 +76,7 @@ int main() {
     // EXIBIR RESULTADO DA CARTA 1:
 
     printf("CARTAS CRIADAS COM SUCESSO! \n");
-    printf("CARTA 1: \n")
+    printf("CARTA 1: \n");
     printf("Estado: %s\n", estado);
     printf("ID: %s\n", id);
     printf("Cidade: %s\n", nome);
@@ -89,7 +89,7 @@ int main() {
 
     // EXIBIR RESULDADO DA CARTA 2:
 
-    printf("CARTA 2: \n")
+    printf("CARTA 2: \n");
     printf("Estado: %s\n", estado2);
     printf("ID: %s\n", id2);
     printf("Cidade: %s\n", nome2);
